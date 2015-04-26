@@ -1,0 +1,19 @@
+=gradient($initial, $end)
+  background: -webkit-gradient(linear, left top, left bottom, from($initial), to($end))
+  background: -webkit-linear-gradient($initial, $end)
+  background: -moz-linear-gradient(center top, $initial 0%, $end 100%)
+  background: -moz-gradient(center top, $initial 0%, $end 100%)
+
+=radius($size)
+  -webkit-border-radius: $size
+  -moz-border-radius: $size
+  border-radius: $size
+
+
+=radius-right($size)
+  -webkit-border-top-right-radius: $size 
+  -webkit-border-bottom-right-radius: $size 
+  -moz-border-radius-topright: $size 
+  -moz-border-radius-bottomright: $size 
+  border-top-right-radius: $size 
+  border-bottom-right-radius: $size 
